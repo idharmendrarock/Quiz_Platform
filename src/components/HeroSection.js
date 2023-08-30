@@ -1,15 +1,15 @@
 import React from 'react'
 import CreateQuizes from '../images/CreateQuizes.jpg'
-import myQuizes from '../images/myQuizes.png'
+import myQuizes from '../images/myQuizes.jpg'
 import { Typography, Grid,CardActionArea,CardContent } from '@mui/material';
 
 
 
 const HeroSection = () => {
     return (
-        <Grid container sx={6} style={{ width: '100%', marginTop: '10%',marginLeft:'10%'}}>
+        <Grid container sx={6} style={{ width: '100%', marginTop: '10%',marginLeft:'20%'}}>
            
-           <Grid  >
+           <Grid item sx={4} >
                    
                 <CardActionArea >                        
                     <CardContent>  
@@ -18,10 +18,8 @@ const HeroSection = () => {
                     </CardContent>                         
                 </CardActionArea>
             </Grid> 
-
-            <br />
            
-            <Grid  >
+            <Grid item xs={4} width='150px' >
               
               <CardActionArea >                        
                   <CardContent> 

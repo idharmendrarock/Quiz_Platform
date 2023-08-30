@@ -1,27 +1,14 @@
-import NavBar from './components/NavBar';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import HeroSection from './components/HeroSection';
-import { Container } from '@mui/material';
+import {Route,Routes,BrowserRouter as Routers} from 'react-router-dom'
+import Home from './Pages/Home';
 
-
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#ffff',
-    },
-  },
-});
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <NavBar />
-      <Container>
-        <HeroSection />
-      </Container>
-    </ThemeProvider>
+    <Routers>
+      <Routes>
+        <Route path='/'  element={<Home />} />
+      </Routes>
+    </Routers>
   );
 }
 

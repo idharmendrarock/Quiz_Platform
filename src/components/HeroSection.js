@@ -9,7 +9,7 @@ const HeroSection = () => {
     return (
         <Grid container sx={6} style={{ width: '100%', marginTop: '10%',marginLeft:'10%'}}>
            
-           <Grid item sx={4} >
+           <Grid  >
                    
                 <CardActionArea >                        
                     <CardContent>  
@@ -18,8 +18,10 @@ const HeroSection = () => {
                     </CardContent>                         
                 </CardActionArea>
             </Grid> 
+
+            <br />
            
-            <Grid item xs={4} width='150px' >
+            <Grid  >
               
               <CardActionArea >                        
                   <CardContent> 
